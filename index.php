@@ -205,6 +205,9 @@
                             case 'staff':
                                 include_once './controllers/C_Staff.php';
                                 break;
+                            case 'my-article':
+                                include_once './controllers/C_MyArticle.php';
+                                break;
                             default:
                                 include_once 'view/home.php';
                                 break;

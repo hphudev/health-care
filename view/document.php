@@ -12,7 +12,7 @@
 <hr style="margin-bottom: 50px;">
 <div class="container d-flex justify-content-center flex-column text-center" style="padding-left: 10%; padding-right: 10%;">
     <div class="" style="display:flex; position: absolute; top: 5%; right:0%; margin-top: 20px;">
-        <button type="button" class="btn bg-warning fs-4" style="margin-right: 20px; min-width: 100px; border-radius: 10px; font-weight: 700">Bài viết của bạn</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
     </div>
     <h1>Viết bài</h1>
     <p class="fs-2">Mỗi bài viết của bạn sẽ góp một phần công sức vì sức khỏe người Việt</p>
@@ -88,6 +88,32 @@
     <div class="" style="display:flex; position: relative; right: 3%; margin-top: 20px; margin-left: 94%; margin-bottom: 10%">
         <!-- <button type="button" class="btn btn-outline-dark fs-4" style="margin-right: 20px; min-width: 100px; border-radius: 20px; font-weight: 700">Xuất bài</button> -->
         <button id="btnSendArticle" type="button" class="btn btn-outline-success fs-4" style="min-width: 100px; border-radius: 20px; font-weight: 700">Gửi bài</button>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg fs-3">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <script type="text/javascript">
